@@ -53,6 +53,13 @@ public class MyFirstSeleniumClass {
 		Boolean c = driver.findElement(By.partialLinkText("Vijay")).isDisplayed();
 		System.out.println("Logged in Successfully");
 		
+		
+		//<span class="nav-line-4">Your Orders</span>
+		driver.findElement(By.partialLinkText("Your Orders")).click();
+		
+		//<span class="nav-text">Sign Out</span>
+		driver.findElement(By.partialLinkText("Sign Out")).click();
+		
 		try {
 		Thread.sleep(5000);
 		}
